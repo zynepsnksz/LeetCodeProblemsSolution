@@ -1,14 +1,14 @@
-# def solution(nums):
-#     numbers={}
-#     caunter= 0
-#     max_num= 0
-#     for num in nums:
-#         numbers[num]= 1 + numbers.get(num,0)
-#         if numbers[num]>max_num:
-#             caunter = num
-#         max_num =max(max_num,numbers[num]) 
-#     return caunter  
-# print(solution([1,2,1,2,2,2,2,2]))
+def solution(nums):
+    numbers={}
+    caunter= 0
+    max_num= 0
+    for num in nums:
+        numbers[num]= 1 + numbers.get(num,0)
+        if numbers[num]>max_num:
+            caunter = num
+        max_num =max(max_num,numbers[num]) 
+    return caunter  
+print(solution([1,2,1,2,2,2,2,2]))
 def boyer_Moore(nums):
     number=0
     caunter=0
